@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+}
+body .App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .App .table-container {
+  width: 80%;
+  box-shadow: 0px 0px 11px -2px #000000;
+  background-color: whitesmoke;
+}
+body .App .table-container .table-header {
+  text-align: center;
+  padding: 1em;
+  background-color: #d80707;
+  color: #fcf965;
+}
+body .App .table-container .pros-and-cons {
+  display: flex;
+  background-color: #fcf965;
+  color: #d80707;
+}
+body .App .table-container .pros-and-cons > div {
+  width: 50%;
+  text-align: center;
+  padding: 1em 0;
+}
+body .App .table-container .pros-and-cons > div:first-child {
+  border-right: 1px solid #ffffff;
+}
+body .App .table-container .table-body {
+  display: flex;
+  max-height: 70vh;
+}
+body .App .table-container .table-body > div {
+  width: 50%;
+  overflow-y: auto;
+}
+body .App .table-container .table-body .MuiTypography-root {
+  padding: 10px;
+}
+body .App .table-container .table-body .MuiTypography-subtitle2 {
+  word-wrap: break-word;
+  max-width: 90%;
+}
+body .App .table-container .table-body .MuiInputBase-root {
+  padding: 10px;
+}

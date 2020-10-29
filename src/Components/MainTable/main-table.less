@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+
+    .App {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .table-container {
+            width: 80%;
+            box-shadow: 0px 0px 11px -2px #000000;
+            background-color: whitesmoke;
+    
+            .table-header {
+                text-align: center;
+                padding: 1em;
+                background-color: rgb(216, 7, 7);
+                color:  rgb(252, 249, 101);
+            };
+        
+            .pros-and-cons {
+                display: flex;
+                background-color: rgb(252, 249, 101);
+                color: rgb(216, 7, 7);
+    
+                >div {
+                    width: 50%;
+                    text-align: center;
+                    padding: 1em 0;
+                };
+    
+                >div:first-child {
+                    border-right: 1px solid rgb(255, 255, 255)
+                };
+            };
+        
+            .table-body {
+                display: flex;
+                max-height: 70vh;
+                >div {
+                    width: 50%;
+                    overflow-y: auto;
+                };
+                .MuiTypography-root {
+                    padding: 10px;
+                };
+
+                .MuiTypography-subtitle2 {
+                    word-wrap: break-word;
+                    max-width: 90%
+                };
+        
+                .MuiInputBase-root {
+                    padding: 10px
+                };
+            };
+        };
+    }
+    
+};
+
